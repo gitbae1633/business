@@ -1,6 +1,6 @@
 spring:
    application:
-     name: mysite
+     name: business
    profiles:
       active: development
       
@@ -37,15 +37,15 @@ spring:
          on-profile: development
    web:
       resources:
-         static-locations: classpath:/assets/, file:/Users/yoon/mysite-uploads/
+         static-locations: classpath:/assets/, file:/mysite-uploads/
    devtools:
       livereload:
          enabled: true
    datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      url: jdbc:mariadb://192.168.64.2:3306/webdb?charset=utf8
-      username: webdb
-      password: webdb   
+      url: jdbc:mariadb://192.168.10.105:3307/smartlogistics?charset=utf8
+      username: user1
+      password: user1   
 
 server:
    port: 8080
@@ -74,9 +74,9 @@ spring:
          static-locations: classpath:/assets/, file:/mysite-uploads/
    datasource:
       driver-class-name: org.mariadb.jdbc.Driver
-      url: jdbc:mariadb://192.168.64.2:3306/webdb?charset=utf8
-      username: webdb
-      password: webdb   
+      url: jdbc:mariadb://192.168.10.105:3307/smartlogistics?charset=utf8
+      username: user1
+      password: user1   
          
 server:
    port: 8088

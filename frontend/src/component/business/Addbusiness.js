@@ -13,11 +13,11 @@ function Addbusiness({ callbackAdd }) {
           //   console.log(e.target.elements.phone.value);
         }}
       >
-        <label for="id">id</label>
+        <label htmlFor="id">id</label>
         <input type="text" id="id" name="id" />
-        <label for="name">name</label>
+        <label htmlFor="name">name</label>
         <input type="text" id="name" name="name" />
-        <label for="phone">phone</label>
+        <label htmlFor="phone">phone</label>
         <input type="text" id="phone" name="phone" />
         <input type="submit" value="등록" />
       </form>

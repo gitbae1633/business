@@ -16,7 +16,7 @@ public class BusinessRepository {
 
 	
 	public Boolean insert(BusinessVo vo) {
-		return 1 == sqlSession.insert("guestbook.insert", vo);
+		return 1 == sqlSession.insert("business.insert", vo);
 	}
 	
 }

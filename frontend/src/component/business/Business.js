@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Addbusiness from "./Addbusiness";
 
 function Business() {
-  const [datas, setDatas] = useState([
+  const [datas, setDatas] = useState(
     {
       id: "",
       name: "",
       phone: "",
     }, // state값을 변경하면 component가 실행된다.
-  ]);
+  );
   const addData = async function (e) {
     setDatas({
       [e.target.elements.id.name]: e.target.elements.id.value,
